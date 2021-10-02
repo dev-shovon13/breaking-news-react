@@ -6,9 +6,8 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
-import { Container, MenuItem } from '@mui/material';
+import { Container } from '@mui/material';
 
-const menuItems = ["Sports", "Culture", "Gallery"]
 const Header = () => {
     return (
         <Box sx={{ flexGrow: 1 }}>
@@ -24,16 +23,9 @@ const Header = () => {
                         >
                             <MenuIcon />
                         </IconButton>
-                        <MenuItem sx={{ flexGrow: 1 }}>
-                            <Typography variant="h6" component="div" style={{ marginRight: "10px" }}>
-                                ABC News
-                            </Typography>
-                            {/* {
-                                menuItems.map(item => <Typography key={item} style={{ padding: "5px", border: "1px solid white", marginRight: "5px" }}>
-                                    {item}
-                                </Typography>)
-                            } */}
-                        </MenuItem>
+                        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                            ABC News
+                        </Typography>
                         <Button color="inherit">Login</Button>
                     </Toolbar>
                 </Container>
