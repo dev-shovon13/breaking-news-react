@@ -15,7 +15,7 @@ const NewsSite = () => {
     return (
         <Container>
             <div style={{ height: "90px" }}></div>
-            <Grid container spacing={3} >
+            <Grid container spacing={3}>
                 {
                     news.map(nw => <News key={nw.title} news={nw} />)
                 }

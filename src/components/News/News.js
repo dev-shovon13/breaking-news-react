@@ -1,15 +1,15 @@
 import { Card, CardActionArea, CardContent, CardMedia, Grid, Typography } from '@mui/material';
 
 const News = (props) => {
-    const { title, author, content, urlToImage } = props.news
+    const { title, author, content, urlToImage, url } = props.news
     return (
 
         <Grid item xs={12} sm={6} md={6} lg={4} xl={3}>
             <Card style={{ height: '100%' }}>
-                <CardActionArea>
+                <CardActionArea href={url} target="_blank">
                     <CardMedia
                         component="img"
-                        height="140"
+                        height="180"
                         image={urlToImage}
                         alt="news-image"
                     />
