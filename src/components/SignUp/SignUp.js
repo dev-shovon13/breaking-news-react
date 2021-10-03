@@ -67,7 +67,6 @@ const SignUp = () => {
                                 margin="dense"
                                 label="User ID"
                                 placeholder="Set Your User ID"
-                            // fullWidth
                             />
                         </Box>
                         <Box sx={{ display: 'flex', alignItems: 'flex-end' }}>
@@ -77,7 +76,7 @@ const SignUp = () => {
                                 margin="dense"
                                 label="Password"
                                 placeholder="Set Your Password"
-                            // fullWidth
+                                type="password"
                             />
                         </Box>
                     </Box>

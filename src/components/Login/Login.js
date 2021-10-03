@@ -33,6 +33,7 @@ const Login = () => {
                         variant="outlined"
                         label="Password"
                         placeholder="Enter Your Password"
+                        type="password"
                         fullWidth
                     />
                     <Button
